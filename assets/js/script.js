@@ -20,19 +20,27 @@ $(document).ready(function() {
         // Use .each() to loop through the timeblocks using class- time-block to access the numbers in each id.
         $(".time-block").each(function () {
             let blockHour = parseInt($(this).attr("id").split("-")[1]); 
-            
-        if (blockHour < currentHour) {
-            $
-        }
-        })
 
         // OR USE A FOR LOOP TO GET THE HOURS FOR EACH TIMEBLOCK
         // for (let i = 0; i < $(".time-block").length; i++) {
         //     let blockHour = parseInt($(".time-block")[i].getAttribute("id").split("-")[1]);
         //     console.log(blockHour) 
         // }
+            
+        if (blockHour < currentHour) {
+            $(this).addClass("past");
+        } else if (blockHour === currentHour) {
+            $(this).addClass("present");
+        } else {
+            $(this).addClass("future");
+        }
+        })
+
+        
     }
 
     hourUpdate();
+
+    let interval = setInterval(hourUpdate, 30000)
 })
 
