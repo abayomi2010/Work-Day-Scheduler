@@ -41,6 +41,11 @@ $(document).ready(function() {
 
     hourUpdate();
 
-    let interval = setInterval(hourUpdate, 30000)
+
+        // $(".description hour-[i]").text(localStorage.getItem("value"));
+
+
+    $("#currentDay").text(moment().format("dddd, MMM DD YYYY LTS"));
+
 })
 
