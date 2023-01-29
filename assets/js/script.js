@@ -46,12 +46,14 @@ $(document).ready(function() {
     hourUpdate();
 
     // Persist events between refreshes of a page
-    $("#hour-0 .description").val(localStorage.getItem("hour-0"));
-    $("#hour-1 .description").val(localStorage.getItem("hour-1"));
-    $("#hour-2 .description").val(localStorage.getItem("hour-2"));
-    $("#hour-3 .description").val(localStorage.getItem("hour-3"));
-    $("#hour-4 .description").val(localStorage.getItem("hour-4"));
-    $("#hour-5 .description").val(localStorage.getItem("hour-5"));
+
+
+    // $("#hour-0 .description").val(localStorage.getItem("hour-0"));
+    // $("#hour-1 .description").val(localStorage.getItem("hour-1"));
+    // $("#hour-2 .description").val(localStorage.getItem("hour-2"));
+    // $("#hour-3 .description").val(localStorage.getItem("hour-3"));
+    // $("#hour-4 .description").val(localStorage.getItem("hour-4"));
+    // $("#hour-5 .description").val(localStorage.getItem("hour-5"));
     $("#hour-6 .description").val(localStorage.getItem("hour-6"));
     $("#hour-7 .description").val(localStorage.getItem("hour-7"));
     $("#hour-8 .description").val(localStorage.getItem("hour-8"));
@@ -61,8 +63,8 @@ $(document).ready(function() {
     $("#hour-12 .description").val(localStorage.getItem("hour-12"));
     $("#hour-13 .description").val(localStorage.getItem("hour-13"));
     $("#hour-14 .description").val(localStorage.getItem("hour-14"));
-    $("#hour-15 .description").val(localStorage.getItem("hour-15"));$("#hour-16 .description").val(localStorage.getItem("hour-16"));$("#hour-17 .description").val(localStorage.getItem("hour-17"));$("#hour-18 .description").val(localStorage.getItem("hour-18"));$("#hour-19 .description").val(localStorage.getItem("hour-19"));$("#hour-20 .description").val(localStorage.getItem("hour-20"));$("#hour-21 .description").val(localStorage.getItem("hour-21"));$("#hour-22 .description").val(localStorage.getItem("hour-22"));
-    $("#hour-23 .description").val(localStorage.getItem("hour-23"));
+    // $("#hour-15 .description").val(localStorage.getItem("hour-15"));$("#hour-16 .description").val(localStorage.getItem("hour-16"));$("#hour-17 .description").val(localStorage.getItem("hour-17"));$("#hour-18 .description").val(localStorage.getItem("hour-18"));$("#hour-19 .description").val(localStorage.getItem("hour-19"));$("#hour-20 .description").val(localStorage.getItem("hour-20"));$("#hour-21 .description").val(localStorage.getItem("hour-21"));$("#hour-22 .description").val(localStorage.getItem("hour-22"));
+    // $("#hour-23 .description").val(localStorage.getItem("hour-23"));
     
 
     // Display the current day at the top of the calender when a user opens the planner.
