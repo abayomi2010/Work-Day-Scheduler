@@ -1,9 +1,12 @@
 $(document).ready(function() {
     // Add eventlistener to save button when clicked
+    //  Allow a user to enter an event when they click a timeblock
     $(".saveButton").on("click", function () {
         let timeID = $(this).parent().attr("id");
 
         let value = $(this).siblings(".description").val();
+
+        // Save the event in local storage when the save button is clicked in that timeblock.
         
         localStorage.setItem(timeID, value);
 
@@ -27,6 +30,7 @@ $(document).ready(function() {
         //     console.log(blockHour) 
         // }
             
+        // Color-code each timeblock based on past, present, and future when the timeblock is viewed.
         if (blockHour < currentHour) {
             $(this).addClass("past");
         } else if (blockHour === currentHour) {
@@ -41,7 +45,7 @@ $(document).ready(function() {
 
     hourUpdate();
 
-
+    // Persist events between refreshes of a page
     $("#hour-0 .description").val(localStorage.getItem("hour-0"));
     $("#hour-1 .description").val(localStorage.getItem("hour-1"));
     $("#hour-2 .description").val(localStorage.getItem("hour-2"));
@@ -61,8 +65,8 @@ $(document).ready(function() {
     $("#hour-23 .description").val(localStorage.getItem("hour-23"));
     
 
-
-    $("#currentDay").text(moment().format("dddd, MMM DD YYYY LTS"));
+    // Display the current day at the top of the calender when a user opens the planner.
+    $("#currentDay").text(moment("dddd, MMM DD YYYY LTS").format("dddd, MMM DD YYYY"));
 
 })
 
