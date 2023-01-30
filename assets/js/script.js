@@ -68,7 +68,7 @@ $(document).ready(function() {
     
 
     // Display the current day at the top of the calender when a user opens the planner.
-    $("#currentDay").text(moment("dddd, MMM DD YYYY LTS").format("dddd, MMM DD YYYY"));
+    $("#currentDay").text(moment().format("dddd, MMM DD YYYY LT"));
 
 })
 
