@@ -31,10 +31,10 @@ The following animation demonstrates the application functionality:
 ![A user clicks on slots on the color-coded calendar and edits the events.](assets/Images/Work%20Day%20Scheduler.gif)
 
 
+GitHub [repository](https://github.com/abayomi2010/Work-Day-Scheduler)
 
 
-
-
+Link to the deployed [site](https://abayomi2010.github.io/Work-Day-Scheduler/)
 
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
 
