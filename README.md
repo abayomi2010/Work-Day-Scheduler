@@ -24,4 +24,11 @@ The app should:
 
 * Persist events between refreshes of a page
 
+## Animation
+
+The following animation demonstrates the application functionality:
+
+![A user clicks on slots on the color-coded calendar and edits the events.](assets/Images/Work%20Day%20Scheduler.gif)
+
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
